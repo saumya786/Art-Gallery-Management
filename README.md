@@ -35,4 +35,4 @@ To use this project in case of windows either install XAMPP or WAMP. And in case
 
 4. For going to the admin site go to Admin.php and for agent site go to agent.php and for customer go to index.html
 
-Incase of Any problem feel free to contact me (saumyakundu786@gmail.com)
+In-case of any problem feel free to contact me.
