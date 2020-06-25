@@ -1,0 +1,244 @@
+@media screen {
+	html{
+    height: 100%;
+    width: 100%;
+  }
+  body{
+    display: table;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  header{
+    display: table-row;
+    height: 5%;
+    width: 100%;
+    background-color: #0a3d62;
+  }
+  header .logo{
+    font-family: comfortaa,sans-serif;
+    color: white;
+    font-size: 2em;
+    padding: 5px;
+  }
+  header .userOptions a{
+    float: right;
+    font-family: comfortaa,sans-serif;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+  }
+  .userOptions a:hover{
+    background-color: #3498db;
+  }
+  .dropDownContent{
+    /*display: none;*/
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropDownContent a {
+    color: black;
+    font-family: sans-serif;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropDownContent a:hover{
+    background-color: #95a5a6;
+  }
+  main h2{
+    font-family: comfortaa,sans-serif;
+    text-align: center;
+  }
+  footer{
+    display: table-row;
+    height: 5%;
+    background-color: #0a3d62;
+    text-align: right;
+  }
+  footer p{
+    font-family: comfortaa,sans-serif;
+    font-size: 1.2em;
+    color: white;
+    padding-right: 10px;
+  }
+  .ErrorMessage{
+    text-align: center;
+    font-family: comfortaa,sans-serif;
+  }
+  #warningImg{
+    width: 100px;
+    height: 100px;
+  }
+  main .returnToDashboard{
+    width: 230px;
+    padding: 10px 16px;
+    margin: 10px;
+    background-color: green;
+  }
+  main .returnToDashboard:hover{
+    background-color: #2ecc71;
+  }
+  main .returnToDashboard a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1.2em;
+  }
+  main .printThisPage a{
+    text-decoration: none;
+    display: block;
+    width: 230px;
+    padding: 10px 16px;
+    margin: 10px;
+    background-color: green;
+    color: white;
+    font-family: sans-serif;
+  }
+  main .printThisPage a:hover{
+    background-color: #2ecc71;
+  }
+	h2{
+		text-align: center;
+		font-family: comfortaa,sans-serif;
+	}
+	.OrderDetails{
+		display: block;
+		width: 95%;
+		padding: 10px;
+		font-family: comfortaa,sans-serif;
+		background-color: #dfe6e9;
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	}
+	.CustomerDetails{
+		display: none;
+	}
+	.orderContents table{
+		width: 100%;
+		border-collapse: collapse;
+		font-family: comfortaa,sans-serif;
+	}
+	.orderContents td{
+		word-wrap: break-word;
+	}
+	.orderContents table caption{
+		text-align: center;
+		padding-bottom: 10px;
+		font-size: 1.4em;
+	}
+	.orderContents table thead{
+		color: #c0392b;
+		font-weight: bold;
+		font-size: 1.4em;
+	}
+	.orderContents table tbody{
+		text-align: center;
+		font-weight: bold;
+		font-size: 1.2em;
+	}
+	.orderContents table tfoot{
+		color: #c0392b;
+		font-weight: bold;
+		font-size: 1.4em;
+		text-align: center;
+	}
+	.secondaryDetails{
+		font-family: comfortaa,cursive,sans-serif;
+	}
+	.point{
+		font-weight: bold;
+	}
+	.agentDetails, .cardDetails{
+		display: block;
+		width: 90%;
+		margin-bottom: 20px;
+		background-color: #2ecc71;
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	}
+}
+@media print {
+	@page{
+		margin-top: 20px;
+		/*margin-left: 0px;
+		margin-right: 0px;*/
+	}
+	h2{
+		text-align: center;
+		font-family: sans-serif;
+		font-size: 20px;
+	}
+	header .logo{
+    font-family: comfortaa,sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  header .userOptions{
+    display: none;
+  }
+  main .returnToDashboard, main .printThisPage,footer, .ErrorMessage{
+    display: none;
+  }
+	.orderBasicDetails, .secondaryDetails{
+	  font-family: sans-serif;
+	  font-size: 12px;
+	  display: flex;
+	  border: solid 1px;
+	}
+	.OrderDetails{
+	  flex: 45%;
+		word-wrap: break-word;
+	}
+	.orderContents td{
+		word-wrap: break-word;
+	}
+	.CustomerDetails{
+	  flex: 55%;
+		word-wrap: break-word;
+	  border-right: solid 1px;
+		word-wrap: break-word;
+	}
+	.agentDetails{
+		flex: 50%;
+		border-right: solid 1px;
+		word-wrap: break-word;
+	}
+	.cardDetails{
+		flex: 50%;
+	}
+	.point{
+		font-weight: bold;
+	}
+	.orderContents table{
+		margin-top: 20px;
+		width: 100%;
+		border-collapse: collapse;
+		font-family: sans-serif;
+	}
+	.orderContents .title{
+		font-size: 18px;
+	}
+	.orderContents .otherDetails{
+		font-size: 12px;
+	}
+	.orderContents .cost{
+		font-weight: bold;
+		font-size: 14px;
+	}
+	.orderContents table caption{
+		font-size: 15px;
+	}
+	.orderContents table thead{
+		font-size: 14px;
+	}
+	.orderContents table tfoot{
+		text-align: center;
+		font-weight: bold;
+		font-size: 15px;
+	}
+}

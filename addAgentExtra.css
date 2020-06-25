@@ -1,0 +1,30 @@
+.SuccessMessage2{
+  width: 700px;
+  transform: translate(48%,0);
+  text-align: center;
+}
+.SuccessMessage2 h1{
+  font-family: sans-serif;
+  color: white;
+  font-weight: 400;
+}
+.SuccessMessage2 p{
+  font-family: comfortaa,sans-serif;
+  color: white;
+  font-size: 1.2em;
+}
+.SuccessMessage2 button{
+  margin-right: 16px;
+  padding: 5px 30px;
+  border: none;
+  outline: none;
+  height: 40px;
+  color: white;
+  cursor: pointer;
+  border-radius: 20px;
+  font-weight: 300;
+  width: 100%;
+  font-family: sans-serif;
+  font-weight: bold;
+  background: linear-gradient(#0984e3,#3498db);
+}

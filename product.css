@@ -1,0 +1,87 @@
+.item{
+  display: block;
+  width: 90%;
+  background-color: #dfe6e9;
+  margin-left: 70px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.item .ProductName{
+  font-size: 2em;
+}
+.item .ProductPrice{
+  font-size: 2em;
+  float: right;
+}
+.item .points{
+  font-size: 1.2em;
+  margin-right: 3px;
+}
+.item .buttons{
+  text-align: right;
+}
+main .returnToDashboard{
+  width: 230px;
+  padding: 10px 16px;
+  margin: 10px;
+  background-color: green;
+}
+main .returnToDashboard:hover{
+  background-color: #2ecc71;
+}
+main .returnToDashboard a{
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 1.2em;
+}
+.cartButton{
+  background-color: #27ae60;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.popUpContents{
+  position: absolute;
+  background-color: #ecf0f1;
+  min-width: 430px;
+  height: 440px;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+.popUpContents h2{
+  text-align: center;
+  font-family: sans-serif;
+}
+.popUpContentsProducts{
+  display: block;
+  background-color: white;
+  width: 90%;
+  margin: 10px;
+  height: 290px;
+  overflow: auto;
+}
+.popUpContents .CartContent{
+  display: block;
+  /*text-align: center;*/
+  margin: 10px;
+}
+.popUpContents .CartContent .ProductName{
+  font-family: cursive,sans-serif;
+  font-size: 25px;
+}
+.popUpContents .CartContent .ProductPrice{
+  font-family: sans-serif;
+  text-align: right;
+}
+.checkOutButton{
+  text-align: center;
+}
+.checkOutButton .totalAmount{
+  margin-bottom: 10px;
+  font-family: sans-serif;
+  text-align: right;
+}

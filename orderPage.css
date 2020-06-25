@@ -1,0 +1,47 @@
+.checkOutPage h1,h3{
+  text-align: center;
+  font-family:sans-serif;
+}
+.checkOutPage table{
+  width: 86%;
+  text-align: right;
+  border-collapse: collapse;
+  border: collapse;
+}
+table th{
+  font-family: cursive,sans-serif;
+  padding: 10px;
+  font-size: 1.3em;
+  color: #6F1E51;
+}
+table .title{
+  font-family: cursive,sans-serif;
+  color: #006266;
+  font-size: 1.4em;
+}
+table .price{
+  font-family: cursive,sans-serif;
+  color: #006266;
+  font-size: 1.2em;
+}
+table th:nth-child(1){
+  width:80%;
+}
+table .footer{
+  color: red;
+  font-family: sans-serif;
+  font-size: 1.5em;
+}
+.productTable{
+    transform: translate(7%,0%);
+}
+.paymentOptions{
+  display: block;
+  width: 400px;
+  background-color: #dfe6e9;
+  font-family: sans-serif;
+  transform: translate(50%,0%);
+}
+.paymentOptions .buttons{
+  text-align: center;
+}

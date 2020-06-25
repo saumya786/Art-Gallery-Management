@@ -1,0 +1,306 @@
+@media screen {
+  html{
+    height: 100%;
+    width: 100%;
+  }
+  body{
+    display: table;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  header{
+    display: table-row;
+    height: 5%;
+    width: 100%;
+    background-color: #0a3d62;
+  }
+  header .logo{
+    font-family: comfortaa,sans-serif;
+    color: white;
+    font-size: 2em;
+    padding: 5px;
+  }
+  header .userOptions a{
+    float: right;
+    font-family: comfortaa,sans-serif;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+  }
+  .userOptions a:hover{
+    background-color: #3498db;
+  }
+  .dropDownContent{
+    /*display: none;*/
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropDownContent a {
+    color: black;
+    font-family: sans-serif;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropDownContent a:hover{
+    background-color: #95a5a6;
+  }
+  main h2{
+    font-family: comfortaa,sans-serif;
+    text-align: center;
+  }
+  footer{
+    display: table-row;
+    height: 5%;
+    background-color: #0a3d62;
+    text-align: right;
+  }
+  footer p{
+    font-family: comfortaa,sans-serif;
+    font-size: 1.2em;
+    color: white;
+    padding-right: 10px;
+  }
+  .ErrorMessage{
+    text-align: center;
+    font-family: comfortaa,sans-serif;
+  }
+  #warningImg{
+    width: 100px;
+    height: 100px;
+  }
+  main .returnToDashboard{
+    width: 230px;
+    padding: 10px 16px;
+    margin: 10px;
+    background-color: green;
+  }
+  main .returnToDashboard:hover{
+    background-color: #2ecc71;
+  }
+  main .returnToDashboard a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1.2em;
+  }
+  main .printThisPage a{
+    text-decoration: none;
+    display: block;
+    width: 230px;
+    padding: 10px 16px;
+    margin: 10px;
+    background-color: green;
+    color: white;
+    font-family: sans-serif;
+  }
+  main .printThisPage a:hover{
+    background-color: #2ecc71;
+  }
+  .formContents{
+    display: block;
+    font-family: comfortaa,sans-serif;
+    width: 400px;
+    text-align: center;
+    position: relative;
+    left: 35%;
+    border: 1px solid;
+    padding: 10px;
+  }
+  .formContents input[type="date"]{
+    font-family: comfortaa,sans-serif;
+    display: block;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .formContents input[type="submit"]{
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 20px;
+    color: white;
+    font-family: sans-serif;
+    background-color: #0984e3;
+    height: 40px;
+    width:100%;
+  }
+  .orderList h1{
+    text-align: center;
+    /*font-family: comfortaa,cursive,sans-serif;*/
+    font-family: sans-serif;
+    font-size: 20px;
+  }
+  .orderList h2{
+    display: block;
+    border: 1px solid;
+    font-family: sans-serif;
+    /*font-family: comfortaa,cursive,sans-serif;*/
+    font-size: 15px;
+  }
+  .orderList h3{
+    font-family: sans-serif;
+    text-align: center;
+    margin: 0;
+    font-size: 13px;
+    display: block;
+    border-left: 1px solid;
+    border-right: 1px solid;
+  }
+  .orderBasicDetails, .secondaryDetails{
+    font-family: sans-serif;
+    font-size: 12px;
+    display: flex;
+    border: solid 1px;
+  }
+  .OrderDetails{
+    flex: 45%;
+    word-wrap: break-word;
+  }
+  .CustomerDetails{
+    flex: 55%;
+    word-wrap: break-word;
+    border-right: solid 1px;
+    word-wrap: break-word;
+  }
+  .point{
+    font-weight: bold;
+  }
+  .orderContents2 table{
+    width: 100%;
+    border-collapse: collapse;
+    font-family: sans-serif;
+  }
+  .orderContents2 table caption{
+    border-left: 1px solid;
+    border-right: 1px solid;
+  }
+  .orderContents2 .title,.cost, .orderContents2 table tfoot,thead{
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .orderContents{
+    margin-bottom: 20px;
+  }
+  .orderContents2 .otherDetails{
+    font-size: 12px;
+  }
+  .agentDetails{
+    flex: 50%;
+    border-right: solid 1px;
+    word-wrap: break-word;
+  }
+  .cardDetails{
+    flex: 50%;
+  }
+}
+@media print {
+  @page{
+    /*margin-left: 1.2cm;
+    margin-right: 1.2cm;
+    margin-top: 0;*/
+    margin: 1.27cm;
+  }
+  /*body{
+    margin: 1.6cm;
+  }*/
+  .formContents{
+    display: none;
+  }
+  header .logo{
+    font-family: comfortaa,sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  header .userOptions{
+    display: none;
+  }
+  main .returnToDashboard, main .printThisPage,footer, .ErrorMessage{
+    display: none;
+  }
+  .orderBasicDetails, .secondaryDetails{
+    page-break-inside: avoid;
+  }
+  .orderList h1{
+    text-align: center;
+    /*font-family: comfortaa,cursive,sans-serif;*/
+    font-family: sans-serif;
+    font-size: 20px;
+  }
+  .orderList h2{
+    display: block;
+    border: 1px solid;
+    font-family: sans-serif;
+    /*font-family: comfortaa,cursive,sans-serif;*/
+    font-size: 15px;
+  }
+  .orderList h3{
+    font-family: sans-serif;
+    text-align: center;
+    margin: 0;
+    font-size: 13px;
+    display: block;
+    border-left: 1px solid;
+    border-right: 1px solid;
+  }
+  .orderBasicDetails, .secondaryDetails{
+    font-family: sans-serif;
+    font-size: 12px;
+    display: flex;
+    border: solid 1px;
+  }
+  .OrderDetails{
+    flex: 45%;
+    word-wrap: break-word;
+  }
+  .CustomerDetails{
+    flex: 55%;
+    word-wrap: break-word;
+    border-right: solid 1px;
+    word-wrap: break-word;
+  }
+  .point{
+    font-weight: bold;
+  }
+  .orderContents2 table{
+    width: 100%;
+    border-collapse: collapse;
+    font-family: sans-serif;
+  }
+  .orderContents2 table caption{
+    border-left: 1px solid;
+    border-right: 1px solid;
+  }
+  .orderContents2 .title,.cost, .orderContents2 table tfoot,thead{
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .orderContents{
+    margin-bottom: 20px;
+  }
+  .orderContents2 .otherDetails{
+    font-size: 12px;
+  }
+  .agentDetails{
+    flex: 50%;
+    border-right: solid 1px;
+    word-wrap: break-word;
+  }
+  .cardDetails{
+    flex: 50%;
+  }
+  .Offline{
+    page-break-before: always;
+  }
+}
